@@ -1,0 +1,6 @@
+
+[ 
+    { "id":1, "cpf":"123.456.789-10", "nome":"Ivone Silva" }, 
+    { "id":2, "cpf":"323.546.987-10", "nome":"Magnus Carlsen" },
+    { "id":3, "cpf":"983.766.892-14", "nome":"João Trakinas" } 
+]
