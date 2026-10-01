@@ -3,6 +3,8 @@ const router = express.Router()
 
 const Cliente = require("./controllers/cliente")
 const Pedido = require("./controllers/pedido")
+const Produto = require("./controllers/produto")
+const Item = require("./controllers/item")
 
 const rotaInicial = (req, res) => {
     res.json("Pedidos MVC respondendo")
@@ -17,6 +19,14 @@ router.put('/clientes/:id', Cliente.alterar)
 router.put('/pedidos/:id', Pedido.alterar)
 router.delete('/clientes/:id', Cliente.excluir)
 router.delete('/pedidos/:id', Pedido.excluir)
+router.get('/produtos', Produto.listar)
+router.post('/produtos', Produto.criar)
+router.put('/produtos/:id', Produto.alterar)
+router.delete('/produtos/:id', Produto.excluir)
+router.get('/itens', Item.listar)
+router.post('/itens', Item.criar)
+router.put('/itens/:id', Item.alterar)
+router.delete('/itens/:id', Item.excluir)
 
 
 module.exports = router
